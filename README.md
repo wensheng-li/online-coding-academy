@@ -1,6 +1,6 @@
 # Enrolment Report System
 
-This is a course report system prototype built with **React JS**, **PHP** (backend), and **MySQL** (database). The project allows users to search, filter, sort, and paginate enrolment data. It's designed to be scalable and responsive (partially), providing a user-friendly interface that adapts to different devices such as mobile, iPads, and laptops.
+This course report system prototype was built with **React JS**, **PHP** (backend), and **MySQL** (database). The project allows users to search, filter, sort, and paginate enrolment data. It's designed to be scalable and responsive (partially), providing a user-friendly interface that adapts to different devices such as mobile, iPads, and laptops.
 
 ## Features
 
@@ -40,10 +40,10 @@ cd enrolment-report-system
 
 ### 2. Frontend Setup
 
-#### 2.1. Navigate to the client/ directory
+#### 2.1. Navigate to the client2/ directory
 
 ```bash
-cd client
+cd client2
 ```
 
 #### 2.2 Install the required dependencies
@@ -83,11 +83,11 @@ REACT_APP_API_URL=http://localhost:8888/enrolment-report-system/server
 npm start
 ```
 
-- This should opennd the React app in your default browser.
+- This should open the React app in your default browser.
 
 #### 5.2. Start the Backend:
 
-- In the **server/** directory, run the PHP server using MAMP or any local server setup.
+- In the **server/** directory, run the PHP server using MAMP or any local setup.
 - Example for MAMP: Run the server using the following URL (adjust for your local setup):
 
 ```bash
@@ -128,7 +128,7 @@ ngrok http 3000  # For frontend
 ngrok http 8888  # For backend (PHP server)
 ```
 
-Share the ngrok URL with others for the demonstration.
+You can share the ngrok URL with others for the demonstration.
 
 ## How to Validate Data Retrieval
 
@@ -151,7 +151,7 @@ This project has been built with scalability in mind and could be extended with 
 
 ## Contributing
 
-Contributions are welcome! To make a contribution, please fork the repository and submit a pull request with detailed information about your changes.
+Contributions are welcome! To contribute, please fork the repository and submit a pull request with detailed information about your changes.
 
 ## License
 
@@ -160,10 +160,10 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ```bash
 
 ### Key Points in this README:
-1. **Project Setup:** This section outlines the basic steps to install dependencies, set up the database, and run both the front end and the back end locally.
+1. **Project Setup:** This section outlines the basic steps to install dependencies, set up the database, and run both the front and back end locally.
 2. **Environment Variables:** The `.env` setup ensures that API URLs are configurable.
 3. **Remote Demonstration:** Provides options for cloud deployment and `ngrok` for local-to-remote demos.
-4. **Validation Instructions:** This section explains how to check whether the project is correctly retrieving data from the database.
+4. **Validation Instructions:** This section explains how to check whether the project retrieves data from the database correctly.
 5. **Future Enhancements:** List potential improvements that might be useful for further development or if you need to discuss possible features during a demo or job interview.
 
 You can update the GitHub repository link, project details, and other necessary info according to your specifics.
