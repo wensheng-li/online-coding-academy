@@ -1,10 +1,10 @@
 # Enrolment Report System
 
-This is a protype for course report system built with **React JS**, **PHP** (backend), and **MySQL** (database). The project allows users to search, filter, sort, and paginate enrolment data. It's designed to be scalable and responsive (partially), providing a user-friendly interface that adapts to different devices such as mobile, iPad, and laptops.
+This is a course report system prototype built with **React JS**, **PHP** (backend), and **MySQL** (database). The project allows users to search, filter, sort, and paginate enrolment data. It's designed to be scalable and responsive (partially), providing a user-friendly interface that adapts to different devices such as mobile, iPads, and laptops.
 
 ## Features
 
-- **Search & Filter:** Search for students or courses by name，completion status or description.
+- **Search & Filter:** Search for students or courses by name， completion status or description.
 - **Sorting:** Sort enrolment data by student name, course name, completion status, and enrolment date.
 - **Pagination:** Paginate the data to handle large datasets efficiently.
 - **Responsive Design:** Works well on various devices (mobile, tablet, desktop).
@@ -46,7 +46,7 @@ cd enrolment-report-system
 cd client
 ```
 
-#### 2.2 Install the required deendencies
+#### 2.2 Install the required dependencies
 
 ```bash
 npm install
@@ -104,9 +104,9 @@ http://localhost:3000
 
 ## Usage Instructions
 
-- **Search:** Start typing in the search bar and results will appear instatly. You cann search by student name, surenam, or course description.
+- **Search:** Start typing in the search bar, and results will appear instantly. You can search by student name, surname, or course description.
 - **Sort:** Click the column headers (e.g., Student Name, Course, Status, Enrolled Date) to sort the data in ascending or descending order.
-- **Pagination:** Use the pagination controls at the bottom to navigate through the data.
+- **Pagination:** Use the bottom pagination controls to navigate the data.
 - **Responsive Design:** The table adjusts to fit different screen sizes, offering a mobile-friendly experience.
 
 ## Remote Demonstration
@@ -134,10 +134,10 @@ Share the ngrok URL with others for the demonstration.
 
 To verify that the system correctly retrieves data from the database:
 
-1. Make sure your MySQL database is set up with the correct data by importing the provided db.sql file.
-2. Check that your PHP backend (get_enrolments.php) successfully fetches data when called from the frontend.
-3. Open the browser’s developer tools (F12), go to the Network tab, and verify that the correct API requests are being made and the data is being returned as expected.
-4. The table should populate with enrolment data and allow filtering, sorting, and pagination to ensure everything is functioning properly.
+1. Import the provided db.sql file to ensure your MySQL database is set up with the correct data.
+2. Check that your PHP backend (get_enrolments.php) successfully fetches data when called from the front end.
+3. Open the browser’s developer tools (F12), go to the Network tab, and verify that the correct API requests are being made and the data is returned as expected.
+4. The table should populate with enrolment data and allow filtering, sorting, and pagination to ensure proper function.
 
 ## Future Enhancements
 
@@ -147,11 +147,11 @@ This project has been built with scalability in mind and could be extended with 
 - Advanced filtering options for course status, date range, etc.
 - Exporting reports as PDF or CSV.
   Dashboard and analytics for course enrolment trends.
-- Fully completed for the responsive design for different devices.
+- Fully completed the responsive design for different devices.
 
 ## Contributing
 
-Contributions are welcome! If you would like to contribute, please fork the repository and submit a pull request with detailed information about your changes.
+Contributions are welcome! To make a contribution, please fork the repository and submit a pull request with detailed information about your changes.
 
 ## License
 
@@ -160,11 +160,11 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ```bash
 
 ### Key Points in this README:
-1. **Project Setup:** It outlines the basic steps to install dependencies, set up the database, and run both frontend and backend locally.
+1. **Project Setup:** This section outlines the basic steps to install dependencies, set up the database, and run both the front end and the back end locally.
 2. **Environment Variables:** The `.env` setup ensures that API URLs are configurable.
 3. **Remote Demonstration:** Provides options for cloud deployment and `ngrok` for local-to-remote demos.
-4. **Validation Instructions:** Explains how to check if the project is correctly retrieving data from the database.
-5. **Future Enhancements:** Lists potential improvements, which might be useful for further development or if you need to discuss possible features during a demo or job interview.
+4. **Validation Instructions:** This section explains how to check whether the project is correctly retrieving data from the database.
+5. **Future Enhancements:** List potential improvements that might be useful for further development or if you need to discuss possible features during a demo or job interview.
 
-You can update the GitHub repository link, project details, and other necessary info according to your actual project specifics.
+You can update the GitHub repository link, project details, and other necessary info according to your specifics.
 ```
