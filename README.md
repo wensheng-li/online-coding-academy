@@ -1,70 +1,170 @@
-# Getting Started with Create React App
+# Enrolment Report System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a protype for course report system built with **React JS**, **PHP** (backend), and **MySQL** (database). The project allows users to search, filter, sort, and paginate enrolment data. It's designed to be scalable and responsive (partially), providing a user-friendly interface that adapts to different devices such as mobile, iPad, and laptops.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Search & Filter:** Search for students or courses by name，completion status or description.
+- **Sorting:** Sort enrolment data by student name, course name, completion status, and enrolment date.
+- **Pagination:** Paginate the data to handle large datasets efficiently.
+- **Responsive Design:** Works well on various devices (mobile, tablet, desktop).
+- **Backend API:** PHP backend that retrieves data from a MySQL database.
+- **Database Management:** Handles large datasets (up to 100,000 enrolments) with efficient data management.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend:**
+  - React JS
+  - CSS (for styling and responsive design)
+- **Backend:**
+  - PHP 8.2.4 (custom API to serve enrolment data)
+- **Database:**
+  - MySQL (using MAMP for local development)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Setup
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Make sure you have the following installed on your machine:
 
-### `npm run build`
+- **Node.js** (for running the frontend)
+- **MAMP** (or WAMP, or any local server setup for PHP & MySQL)
+- **Git** (for cloning the repository)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Clone the Repository
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/yourusername/enrolment-report-system.git
+cd enrolment-report-system
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2. Frontend Setup
 
-### `npm run eject`
+#### 2.1. Navigate to the client/ directory
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+cd client
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### 2.2 Install the required deendencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 3. Backend Setup
 
-## Learn More
+#### 3.1. Navigate to the server/ directory
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+cd server
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### 3.2. Set up your MySQL database:
 
-### Code Splitting
+- Import the SQL file **db.sql** provided in the **server/db/** folder into your MySQL database.
+- Update the database credentials in the **config.php** file.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 4. Environment Variables
 
-### Analyzing the Bundle Size
+Create a **.env** file in the **client** directory and add your API URL:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+REACT_APP_API_URL=http://localhost:8888/enrolment-report-system/server
+```
 
-### Making a Progressive Web App
+### 5. Running the Project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### 5.1. Start the Frontend:
 
-### Advanced Configuration
+- In the **client** directory
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+npm start
+```
 
-### Deployment
+- This should opennd the React app in your default browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+#### 5.2. Start the Backend:
 
-### `npm run build` fails to minify
+- In the **server/** directory, run the PHP server using MAMP or any local server setup.
+- Example for MAMP: Run the server using the following URL (adjust for your local setup):
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+http://localhost:8888/enrolment-report-system/server/get_enrolments.php
+```
+
+### 6. Access the App
+
+Once both frontend and backend servers are running, visit the frontend in your browser:
+
+```bash
+http://localhost:3000
+```
+
+## Usage Instructions
+
+- **Search:** Start typing in the search bar and results will appear instatly. You cann search by student name, surenam, or course description.
+- **Sort:** Click the column headers (e.g., Student Name, Course, Status, Enrolled Date) to sort the data in ascending or descending order.
+- **Pagination:** Use the pagination controls at the bottom to navigate through the data.
+- **Responsive Design:** The table adjusts to fit different screen sizes, offering a mobile-friendly experience.
+
+## Remote Demonstration
+
+If you'd like to demonstrate this project remotely, you have a few options:
+
+### 1. Deploy to a Cloud Service:
+
+- You can deploy the frontend on platforms like [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/) and host the backend on [Heroku](https://www.heroku.com/), [AWS](https://aws.amazon.com/?nc1=h_ls), or any other cloud provider.
+
+### 2. Use ngrok for Local Demos:
+
+- If you want to keep the project local but demonstrate remotely, you can use ngrok to create a public URL for your local environment.
+
+Example:
+
+```bash
+ngrok http 3000  # For frontend
+ngrok http 8888  # For backend (PHP server)
+```
+
+Share the ngrok URL with others for the demonstration.
+
+## How to Validate Data Retrieval
+
+To verify that the system correctly retrieves data from the database:
+
+1. Make sure your MySQL database is set up with the correct data by importing the provided db.sql file.
+2. Check that your PHP backend (get_enrolments.php) successfully fetches data when called from the frontend.
+3. Open the browser’s developer tools (F12), go to the Network tab, and verify that the correct API requests are being made and the data is being returned as expected.
+4. The table should populate with enrolment data and allow filtering, sorting, and pagination to ensure everything is functioning properly.
+
+## Future Enhancements
+
+This project has been built with scalability in mind and could be extended with additional features, such as:
+
+- User authentication and role-based access control.
+- Advanced filtering options for course status, date range, etc.
+- Exporting reports as PDF or CSV.
+  Dashboard and analytics for course enrolment trends.
+- Fully completed for the responsive design for different devices.
+
+## Contributing
+
+Contributions are welcome! If you would like to contribute, please fork the repository and submit a pull request with detailed information about your changes.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+```bash
+
+### Key Points in this README:
+1. **Project Setup:** It outlines the basic steps to install dependencies, set up the database, and run both frontend and backend locally.
+2. **Environment Variables:** The `.env` setup ensures that API URLs are configurable.
+3. **Remote Demonstration:** Provides options for cloud deployment and `ngrok` for local-to-remote demos.
+4. **Validation Instructions:** Explains how to check if the project is correctly retrieving data from the database.
+5. **Future Enhancements:** Lists potential improvements, which might be useful for further development or if you need to discuss possible features during a demo or job interview.
+
+You can update the GitHub repository link, project details, and other necessary info according to your actual project specifics.
+```
