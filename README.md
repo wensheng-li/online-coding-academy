@@ -34,8 +34,8 @@ Make sure you have the following installed on your machine:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/enrolment-report-system.git
-cd enrolment-report-system
+git clone https://github.com/wensheng-li/online-coding-academy.git
+cd online-coding-academy
 ```
 
 ### 2. Frontend Setup
@@ -91,7 +91,7 @@ npm start
 - Example for MAMP: Run the server using the following URL (adjust for your local setup):
 
 ```bash
-http://localhost:8888/enrolment-report-system/server/get_enrolments.php
+http://localhost:8888/online-coding-academy/server/get_enrolments.php
 ```
 
 ### 6. Access the App
